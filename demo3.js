@@ -1,5 +1,9 @@
-//functional example and adding Events
+// functional example and adding Events
 
-  
-  
-  ReactDOM.render(myelement, document.getElementById('root'));
+function clickbutton() {
+  alert("Clicked!!!!!");
+}
+
+const myelement = <button onClick={clickbutton}>Click the button!</button>;
+
+ReactDOM.render(myelement, document.getElementById("root"));
